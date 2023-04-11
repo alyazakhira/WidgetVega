@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.WidgetVega.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/light_blue_600"
+    android:theme="@style/Theme.WidgetVega.AppWidgetContainer">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/appwidget_text"
+            style="@style/Widget.WidgetVega.AppWidget.Container"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:contentDescription="@string/appwidget_text"
+            android:text="@string/appwidget_text"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
